@@ -1,0 +1,70 @@
+<div class="placeholder-div">
+    <?php if ($this->getConfigValue('custom_section/custom_group/enable_placeholder_div')) : ?>
+        <!-- Your custom content goes here -->
+        <div class="content-block">
+            <div class="image">
+                <img
+                    src="https://images.pexels.com/photos/1133082/pexels-photo-1133082.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Sample Image">
+            </div>
+            <div class="text">
+                <div class="sub-section">
+                    <h4>Title Here</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing eibulumtus mauris.</p>
+                    <p><a href="https://google.com">Find out more</a></p>
+                </div>
+            </div>
+        </div>
+    <?php endif; ?>
+
+</div>
+<style>
+    .placeholder-div {
+        .content-block {
+            display: flex;
+            border-radius: 5px;
+            max-width: 600px;
+            margin: 0 auto 10px;
+        }
+
+        .image {
+            flex: 1;
+        }
+
+        .image img {
+            display: block;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .text {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            flex: 2;
+            color: #1d1d1d;
+            background-color: #f5e6d6;
+            border-top: 1px solid #dca06c;
+            border-bottom: 1px solid #dca06c;
+            padding-left: 5px;
+        }
+
+        .text a {
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-underline-position: under;
+            font-weight: bold;
+            font-size: small;
+            color: #dca06c;
+        }
+
+        .sub-section {
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .sub-section h4 {
+            margin: 5px 0;
+            padding: 0;
+        }
+    }
+</style>

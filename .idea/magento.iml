@@ -105,6 +105,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/vendor/magento/framework/View/Test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/vendor/magento/framework/Webapi/Test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/vendor/magento/framework/Xml/Test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/app/code" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.idea/copilot/chatSessions" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/2tvenom/cborencode" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/allure-framework/allure-codeception" />

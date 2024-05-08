@@ -6,7 +6,6 @@ namespace Test\Project\Block;
 use Magento\Framework\View\Element\Template;
 use Magento\Framework\View\Element\Template\Context;
 use Magento\Framework\App\Config\ScopeConfigInterface;
-use Magento\Tests\NamingConvention\true\string;
 
 class Placeholder extends Template
 {
@@ -23,12 +22,12 @@ class Placeholder extends Template
 
     public function getConfigValue($path):string
     {
-        return $this->scopeConfig->getValue($path);
+        return $this->scopeConfig->getValue($path) ?? '';
     }
 
-    public function isPlaceholderEnabled():string
+    public function isPlaceholderEnabled(): string
     {
-        return $this->getConfigValue('custom_section/custom_group/enable_placeholder') ?? false;
+        return $this->getConfigValue('custom_section/custom_group/enable_placeholder') ?? '';
     }
 
     public function getTitle():string

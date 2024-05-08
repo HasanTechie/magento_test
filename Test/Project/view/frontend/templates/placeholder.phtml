@@ -1,13 +1,16 @@
+<?php
+/** @var $escaper Magento\Framework\Escaper */
+?>
 <div class="placeholder-div">
     <?php if ($this->isPlaceholderEnabled() && $this->getTitle() !== '') : ?>
         <div class="content-block">
             <div class="image">
-                <img src="<?= $this->getImageUrl(); ?>" alt="Sample Image">
+                <img src="<?= $escaper->escapeUrl($this->getImageUrl()); ?>" alt="Sample Image">
             </div>
             <div class="text">
                 <div class="sub-section">
-                    <h4> <?= $this->getTitle(); ?></h4>
-                    <p> <?= $this->getParagraph(); ?></p>
+                    <h4> <?= $escaper->escapeHtml($this->getTitle()); ?></h4>
+                    <p> <?= $escaper->escapeUrl($this->getParagraph()); ?></p>
                     <p><a href="https://google.com">Find out more</a></p>
                 </div>
             </div>

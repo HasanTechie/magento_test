@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 namespace Test\Project\Model\Config\Backend;
 
 class Image extends \Magento\Config\Model\Config\Backend\Image
@@ -22,7 +22,7 @@ class Image extends \Magento\Config\Model\Config\Backend\Image
      * @return string
      * @throw \Magento\Framework\Exception\LocalizedException
      */
-    protected function _getUploadDir()
+    protected function _getUploadDir():string
     {
         return $this->_mediaDirectory->getAbsolutePath($this->_appendScopeInfo(self::UPLOAD_DIR));
     }
@@ -32,7 +32,7 @@ class Image extends \Magento\Config\Model\Config\Backend\Image
      *
      * @return boolean
      */
-    protected function _addWhetherScopeInfo()
+    protected function _addWhetherScopeInfo():bool
     {
         return true;
     }
@@ -42,7 +42,7 @@ class Image extends \Magento\Config\Model\Config\Backend\Image
      *
      * @return string[]
      */
-    protected function _getAllowedExtensions()
+    protected function _getAllowedExtensions():array
     {
         return ['jpg', 'jpeg', 'gif', 'png', 'svg'];
     }
@@ -50,7 +50,7 @@ class Image extends \Magento\Config\Model\Config\Backend\Image
     /**
      * @return string|null
      */
-    protected function getTmpFileName()
+    protected function getTmpFileName():string
     {
         $tmpName = null;
         if (isset($_FILES['groups'])) {

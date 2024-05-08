@@ -1,10 +1,12 @@
 <?php
+declare(strict_types=1);
 
 namespace Test\Project\Block;
 
 use Magento\Framework\View\Element\Template;
 use Magento\Framework\View\Element\Template\Context;
 use Magento\Framework\App\Config\ScopeConfigInterface;
+use Magento\Tests\NamingConvention\true\string;
 
 class Placeholder extends Template
 {
@@ -19,28 +21,29 @@ class Placeholder extends Template
         parent::__construct($context, $data);
     }
 
-    public function getConfigValue($path)
+    public function getConfigValue($path):string
     {
         return $this->scopeConfig->getValue($path);
     }
 
-    public function isPlaceholderEnabled(){
+    public function isPlaceholderEnabled():string
+    {
         return $this->getConfigValue('custom_section/custom_group/enable_placeholder') ?? false;
     }
 
-    public function getTitle()
+    public function getTitle():string
     {
         $value = $this->getConfigValue('custom_section/custom_group/title');
         return $value !== null ? $value : '';
     }
 
-    public function getParagraph()
+    public function getParagraph():string
     {
         $value = $this->getConfigValue('custom_section/custom_group/paragraph');
         return $value !== null ? $value : '';
     }
 
-    public function getImageUrl()
+    public function getImageUrl():string
     {
         // Retrieve the base URL for media files
         $mediaBaseUrl = $this->_storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);

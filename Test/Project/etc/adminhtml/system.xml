@@ -34,34 +34,3 @@
         </section>
     </system>
 </config>
-
-
-<!--    <?xml version="1.0"?>-->
-<!--<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">-->
-<!--    <system>-->
-<!--        <section id="custom_section" translate="label" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">-->
-<!--            <label>PlaceHolder Section</label>-->
-<!--            <tab>general</tab>-->
-<!--            <resource>Magento_Config::config</resource>-->
-<!--            <group id="custom_group" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">-->
-<!--                <label>Custom Group</label>-->
-<!--                <field id="enable_placeholder" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">-->
-<!--                    <label>Enable placeholder</label>-->
-<!--                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>-->
-<!--                </field>-->
-<!--                <field id="title" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">-->
-<!--                    <label>Title</label>-->
-<!--                </field>-->
-<!--                <field id="paragraph" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">-->
-<!--                    <label>Paragraph</label>-->
-<!--                </field>-->
-<!--                <field id="image_upload" translate="label" type="image" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">-->
-<!--                    <label>Image Upload</label>-->
-<!--                    <backend_model>Test\Project\Model\Config\Backend\Image</backend_model>-->
-<!--                    <base_url type="media" scope_info="1">placeholder/image</base_url>-->
-<!--                    <comment><![CDATA[Allowed file types: jpg, jpeg, gif, png, svg]]></comment>-->
-<!--                </field>-->
-<!--            </group>-->
-<!--        </section>-->
-<!--    </system>-->
-<!--</config>-->

@@ -27,18 +27,18 @@ class Placeholder extends Template
 
     public function isPlaceholderEnabled(): string
     {
-        return $this->getConfigValue('custom_section/custom_group/enable_placeholder') ?? '';
+        return $this->getConfigValue('placeholder_section/placeholder_group/enable') ?? '';
     }
 
     public function getTitle():string
     {
-        $value = $this->getConfigValue('custom_section/custom_group/title');
+        $value = $this->getConfigValue('placeholder_section/placeholder_group/title');
         return $value !== null ? $value : '';
     }
 
     public function getParagraph():string
     {
-        $value = $this->getConfigValue('custom_section/custom_group/paragraph');
+        $value = $this->getConfigValue('placeholder_section/placeholder_group/paragraph');
         return $value !== null ? $value : '';
     }
 
@@ -48,7 +48,7 @@ class Placeholder extends Template
         $mediaBaseUrl = $this->_storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);
 
         // Retrieve the path to the uploaded image from configuration
-        $imagePath = $this->scopeConfig->getValue('custom_section/custom_group/image_upload', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+        $imagePath = $this->scopeConfig->getValue('placeholder_section/placeholder_group/image_upload', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
 
         if($imagePath != null) {
             $imageUrl = $mediaBaseUrl . 'placeholder/image/' . $imagePath;

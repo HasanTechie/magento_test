@@ -2,12 +2,12 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Module_Store:etc/config.xsd">
     <default>
-        <custom_section>
-            <custom_group>
-                <enable_placeholder>1</enable_placeholder>
+        <placeholder_section>
+            <placeholder_group>
+                <enable>1</enable>
                 <title>Default Title</title>
                 <paragraph>Default Paragraph</paragraph>
-            </custom_group>
-        </custom_section>
+            </placeholder_group>
+        </placeholder_section>
     </default>
 </config>

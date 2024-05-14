@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp:etc/csp_whitelist.xsd">
+    <policies>
+        <policy id="style-src">
+            <values>
+                <value id="https_unpkg_com" type="host">https://unpkg.com</value>
+            </values>
+        </policy>
+        <policy id="img-src">
+            <values>
+                <value id="https_placehold_co" type="host">https://placehold.co</value>
+            </values>
+        </policy>
+        <policy id="script-src">
+            <values>
+                <value id="https_livereload_js" type="host">http://magento.test:35729</value>
+            </values>
+        </policy>
+    </policies>
+</csp_whitelist>

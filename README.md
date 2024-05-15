@@ -11,4 +11,4 @@
 * Created composer.json file for module for adding to packagist.
 * Added sample translation.
 * Converted CSS code to LESS code.
-* Created readme file. I forgot to created changelog file. but i maintain changelog [here](https://bitbucket.org/sozodesign/just-fabrics/src/master/CHANGELOG.md) at just-fabrics.
+* Created readme file. I forgot to create changelog file. but i maintain changelog [here](https://bitbucket.org/sozodesign/just-fabrics/src/master/CHANGELOG.md) at just-fabrics.

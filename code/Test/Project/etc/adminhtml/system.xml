@@ -8,8 +8,8 @@
         <section id="placeholder_section" translate="label" sortOrder="1" showInDefault="1"
                  showInWebsite="1" showInStore="1">
             <label>Placeholder</label>
-            <tab>namespace_tab</tab>
-            <resource>Namespace_Modulename::system_config</resource>
+            <tab>placehlder_tab</tab>
+            <resource>Placeholder_Module::system_config</resource>
             <group id="placeholder_group" translate="label" type="text" sortOrder="1" showInDefault="1"
                    showInWebsite="1" showInStore="1">
                 <label>Placeholder Section</label>

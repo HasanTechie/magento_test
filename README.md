@@ -3,6 +3,7 @@
 ## About
 * Created custom module for showing placeholder text and image which can be edited from backend.
 * Created custom theme by extending magento's blank theme (for leaning purpose). Also wrote LESS code in that theme. changed logo, favicon using custom theme.
+* Started using grunt for compiling LESS code in custom theme.
 * Added default values in-case fields left empty in admin panel.
 * Created ACL list for admin user roles. Also created csp_whitelist.xml for learning purpose.
 * Added strict datatypes.
